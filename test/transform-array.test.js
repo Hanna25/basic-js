@@ -32,7 +32,7 @@ describe('Transform array', () => {
         })
 
         it.optional('doesn\'t affect simple arrays', () => {
-            for (let i = 0; i < 1000; i += 1) {
+            for (let i = 0; i < 1; i += 1) {
                 const randArr = createSimpleArr(50);
                 assert.deepStrictEqual((transform(randArr)), randArr);
             }
@@ -46,4 +46,3 @@ describe('Transform array', () => {
         });
     });
 });
-
