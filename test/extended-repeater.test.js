@@ -25,7 +25,7 @@ describe('Extended repeater', () => {
     });
 
     it.optional('supports custom separator', () => {
-      assert.equal(repeater('la', { repeatTimes: 3, separator: 's' }), 'laslasla');
+      assert.equal(repeater('la', { repeatTimes: 3, separator: 's' }), 'laslasla');                                           0.0
       assert.equal(repeater('point', { repeatTimes: 3, separator: '&&&' }), 'point&&&point&&&point');
       assert.equal(repeater('12345', { repeatTimes: 5, separator: '3 words separator' }), '123453 words separator123453 words separator123453 words separator123453 words separator12345');
     });
